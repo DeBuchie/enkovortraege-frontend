@@ -1,4 +1,13 @@
 <pre>
   {{(vortraege | async) | json}}
 </pre>
+
+
+<form [formGroup]="form">
+  <input type="text" formControlName="title">
+  <textarea name="beschreibung" id="beschreibung" cols="30" rows="10"
+            formControlName="beschreibung"></textarea>
+  <button (click)="onSubmitButtonClick()">Submit</button>
+</form>
+
 <router-outlet></router-outlet>

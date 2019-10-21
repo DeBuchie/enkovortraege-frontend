@@ -12,6 +12,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {appReducers} from "./store/reducers/app.reducers";
 import {VortragEffects} from "./store/effects/vortrag.effects";
 import {VortragService} from "./services/vortrag.service";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import {VortragService} from "./services/vortrag.service";
     EffectsModule.forRoot([VortragEffects]),
     StoreRouterConnectingModule.forRoot({stateKey: 'router'}),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
+    ReactiveFormsModule
   ],
   providers: [VortragService],
   bootstrap: [AppComponent]
