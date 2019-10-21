@@ -2,10 +2,21 @@ import {Action} from "@ngrx/store";
 import {Vortrag} from "../../models/Vortrag";
 
 export enum VortragActionsEnum {
+  CreateVortrag = '[Vortrag] Create Vortrag',
+  CreateVortragSuccess = '[Vortrag] Create Vortrag Success',
   GetVortraege = '[Vortrag] Get Vortraege',
   GetVortraegeSuccess = '[Vortrag] Get Vortraege Success',
   GetVortrag = '[Vortrag] Get Vortrag',
   GetVortragSuccess = '[Vortrag] Get Vortrag Success'
+}
+
+export class CreateVortrag implements Action{
+  public readonly type = VortragActionsEnum.CreateVortrag;
+  constructor(public payload: Vortrag) {}
+}
+
+export class CreateVortragSuccess implements Action{
+  public readonly type = VortragActionsEnum.CreateVortragSuccess;
 }
 
 export class GetVortraege implements Action {
@@ -27,5 +38,5 @@ export class GetVortragSuccess implements Action {
   constructor(public payload: Vortrag) {}
 }
 
-export type VortragActions = GetVortraege | GetVortraegeSuccess | GetVortrag | GetVortragSuccess;
+export type VortragActions = GetVortraege | GetVortraegeSuccess | GetVortrag | GetVortragSuccess | CreateVortragSuccess | CreateVortrag;
 

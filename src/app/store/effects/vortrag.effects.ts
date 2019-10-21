@@ -4,6 +4,8 @@ import {AppState} from "../state/app.state";
 import {select, Store} from "@ngrx/store";
 import {VortragService} from "../../services/vortrag.service";
 import {
+  CreateVortrag,
+  CreateVortragSuccess,
   GetVortraege,
   GetVortraegeSuccess,
   GetVortrag,
@@ -35,6 +37,13 @@ export class VortragEffects {
     switchMap((vortraege: Vortrag[]) => of(new GetVortraegeSuccess(vortraege)))
   );
 
+  @Effect()
+  createVortrag$ = this.action$.pipe(
+    ofType<CreateVortrag>(VortragActionsEnum.CreateVortrag),
+    map(action => action.payload),
+    switchMap((vortrag: Vortrag) => this.vortragService.createVortrag(vortrag)),
+    switchMap(() => of(new CreateVortragSuccess()))
+  );
 
   constructor(
     private vortragService: VortragService,
