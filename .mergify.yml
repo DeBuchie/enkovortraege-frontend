@@ -1,0 +1,16 @@
+pull_request_rules:
+  - name: automatic merge for Dependabot pull requests
+    conditions:
+      - author=dependabot-preview[bot]
+      - status-success=security/snyk - package.json (DeBuchie)
+    actions:
+      merge:
+        method: merge
+  - name: automatic merge for Snyk pull requests
+    conditions:
+      - author=snyk-bot
+      - status-success=security/snyk - package.json (DeBuchie)
+    actions:
+      merge:
+        method: merge
+
