@@ -22,7 +22,7 @@
     "@ngrx/effects": "^8.4.0",
     "@ngrx/router-store": "^8.4.0",
     "@ngrx/store": "^8.4.0",
-    "@ngrx/store-devtools": "^8.4.0",
+    "@ngrx/store-devtools": "^8.5.0",
     "bulma": "^0.8.0",
     "rxjs": "~6.5.3",
     "tslib": "^1.10.0",
