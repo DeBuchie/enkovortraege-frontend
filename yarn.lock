@@ -887,10 +887,10 @@
   resolved "https://registry.yarnpkg.com/@ngrx/router-store/-/router-store-8.5.1.tgz#d8cbfdde553aaf95837c2af06342d3287ea35027"
   integrity sha512-9M/QOlz4/bVu469bnvceLCJE8IVOeXV/T+InsFpugMfoOdkvan83RiueqcZ3QKMsusOgdUXmkXkzs70qU6XVDA==
 
-"@ngrx/store-devtools@^8.4.0":
-  version "8.4.0"
-  resolved "https://registry.yarnpkg.com/@ngrx/store-devtools/-/store-devtools-8.4.0.tgz#6f79680331072d450498912988df7a44c12b6ddb"
-  integrity sha512-622z0CNdmfmPy17LFcewf/7xU2quhun+G+D7FdF58DlwZDFPJp0UotER1HW+ApGmI8h6hjeQs/7flzX0H12sIg==
+"@ngrx/store-devtools@^8.5.1":
+  version "8.5.1"
+  resolved "https://registry.yarnpkg.com/@ngrx/store-devtools/-/store-devtools-8.5.1.tgz#17ad7b605ff85d30d7ffbee9bf43f928583cf010"
+  integrity sha512-Eml2tV1GkGA7ctnCH7DGKSaQEKtqbFPdnGjgyVyZilKC1oSonsw6U5+vfG3t11CgGSTyZQvi+wQLbmNiKuqQ/g==
 
 "@ngrx/store@^8.5.0":
   version "8.5.1"
